@@ -1,0 +1,267 @@
+*, *::before, *::after { 
+  padding: 0; margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100% !important;
+  height: 100%;
+}
+
+body {
+  
+  display: flex;
+  width: 100%;
+  background: #F7F8FC;
+  border-radius: 0px 0px 4px 4px;
+  justify-content: center;
+  align-items: center;
+}
+
+.NameToday{
+  align-items: center;
+  text-align: center;
+  margin-bottom: 36px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 42px;
+  line-height: 40px;
+  letter-spacing: 0.02em; 
+  color: #424242;
+}
+
+.container {
+  width: 431px;
+  height: 461px;
+  background: #FFFFFF;
+  border: 1px solid #E8E8E8;
+  border-radius: 8px;
+  display: flex;
+  padding-bottom: 13px;
+  align-items: center;
+  flex-direction: column;
+}
+
+.tasksToDo{
+  margin-top: 12px;
+  margin-bottom: 14px;
+  height: 16px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 16px;
+}
+
+.containerElementsCheckBox{
+  align-items: flex-start;
+  width: 409px;
+  padding-top: 4px;
+  margin-left: 16px;
+  margin-right: 6px;
+  overflow-y: auto;
+}
+
+/* задаем толщину и цвет направляющей скроллбара */
+.containerElementsCheckBox::-webkit-scrollbar{
+  width: 4px;
+  background-color:#FFFFFF;
+}
+/* задаем стиль ручки прокрутки */
+.containerElementsCheckBox::-webkit-scrollbar-thumb{
+  width: 4px;
+  height: 200px;
+  background: #D8D8D8;
+  border-radius: 1px;
+}
+
+.elementCheckBox{
+  width: 400px;
+  background: #F1F2F6;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  padding-top: 8px;
+  padding-right: 14px;
+  padding-bottom: 8px;
+  padding-left: 8px;
+}
+
+.del{
+  width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.elementCheckBox:hover .del{
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M11.414 10L15.707 5.707C16.098 5.316 16.098 4.684 15.707 4.293C15.316 3.902 14.684 3.902 14.293 4.293L10 8.586L5.70701 4.293C5.31601 3.902 4.68401 3.902 4.29301 4.293C3.90201 4.684 3.90201 5.316 4.29301 5.707L8.58601 10L4.29301 14.293C3.90201 14.684 3.90201 15.316 4.29301 15.707C4.48801 15.902 4.74401 16 5.00001 16C5.25601 16 5.51201 15.902 5.70701 15.707L10 11.414L14.293 15.707C14.488 15.902 14.744 16 15 16C15.256 16 15.512 15.902 15.707 15.707C16.098 15.316 16.098 14.684 15.707 14.293L11.414 10Z' fill='%23A5A5A5'/%3e%3c/svg%3e ");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.elementCheckBox .del:hover{
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M11.414 10L15.707 5.707C16.098 5.316 16.098 4.684 15.707 4.293C15.316 3.902 14.684 3.902 14.293 4.293L10 8.586L5.70701 4.293C5.31601 3.902 4.68401 3.902 4.29301 4.293C3.90201 4.684 3.90201 5.316 4.29301 5.707L8.58601 10L4.29301 14.293C3.90201 14.684 3.90201 15.316 4.29301 15.707C4.48801 15.902 4.74401 16 5.00001 16C5.25601 16 5.51201 15.902 5.70701 15.707L10 11.414L14.293 15.707C14.488 15.902 14.744 16 15 16C15.256 16 15.512 15.902 15.707 15.707C16.098 15.316 16.098 14.684 15.707 14.293L11.414 10Z' fill='%23252526'/%3e%3c/svg%3e ");
+
+}
+
+.text{
+  width:332px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 16px;
+}
+
+.checkbox{
+  width: 24px;
+  height: 24px;
+  background: #FFFFFF;
+  border: 2px solid #BBC1DA;
+  border-radius: 8px;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* при наведении на check box появится курсор и галочка */
+.checkbox:hover{
+  cursor: pointer; 
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M5.91006 10.4959L3.7071 8.29291C3.31658 7.90239 2.68342 7.90239 2.29289 8.29291C1.90237 8.68343 1.90237 9.3166 2.29289 9.70712L5.29288 12.7071C5.7168 13.131 6.4159 13.0892 6.7863 12.6178L13.7863 4.61786C14.1275 4.18359 14.0521 3.55494 13.6178 3.21372C13.1835 2.87251 12.5549 2.94795 12.2136 3.38222L5.91006 10.4959Z' fill='%23A5A5A5'/%3e%3c/svg%3e ");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* Блок What's next */
+.blockWhatsNext{
+  display: flex;
+  align-items:center;
+  justify-content: flex-end;
+  flex-direction: row-reverse;
+  padding-top: 12px;
+  padding-right: 12px;
+  padding-bottom: 16px;
+  padding-left: 12px;
+  width: 400px;
+}
+
+/* стиль текста, вводимого в поле what's next */
+.textWhatsNext{
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  line-height: 16px;
+  color: #252526;
+  margin-left: 12px;
+  width: 348px;
+}
+
+/* цвет текстовой подсказки */
+.textWhatsNext::-webkit-input-placeholder{
+  color:#A5A5A5;
+}
+
+/* при наведении на блок What's next текстовая подсказка изменит цвет */
+.blockWhatsNext:hover .textWhatsNext::-webkit-input-placeholder{ 
+  color: #252526;
+}
+
+/* при наведении на блок What's next "+" изменит цвет */
+.blockWhatsNext:hover .svgWhatsNext path{ 
+  fill: #252526;
+}
+
+/* Когда фокус на What's next изменить цвет "+" */
+.textWhatsNext:focus + .svgWhatsNext path{
+  fill:#252526;
+}
+/* Блок What's next */
+
+/* Блок с картинками*/
+.picture{
+  width: 429px;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  align-items: center;
+  justify-content: space-evenly;
+  border-bottom: 1px solid #E9E9E9;
+  margin-bottom: 4px;
+}
+
+.text1InPicture{
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.02em;
+  color: #252526;
+  justify-content: center;
+  margin-top: 28px;
+  margin-bottom: 12px;
+}
+
+.text2InPicture{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #A5A5A5;
+  justify-content: center;
+  margin-bottom: 34px;
+}
+/* Блок с картинками*/
+
+/* кнопка новый день */
+.newDay{
+  width: 53px;
+  height: 14px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 14px;
+  letter-spacing: 0.02em;
+  color: #252526;
+}
+
+.buttonNewDay{
+  width: 91px;
+  height: 30px;
+  padding: 8px;
+  background: #FFFFFF;
+  border: 1px solid #E9E9E9;
+  box-sizing: border-box;
+  border-radius: 4px;
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+  position: absolute;
+  left: 16px;
+  bottom: 16px;
+}
+
+.buttonNewDay:hover{
+  background: #DCF2E3;
+  cursor: pointer;
+}
+
+.buttonNewDay:active{
+  background: #9BE9B3;
+}
+/* кнопка новый день */
+

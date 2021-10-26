@@ -1,0 +1,42 @@
+.gauge {
+  width: 74px;
+  height: 74px;
+  display: block;
+  user-select: none;
+  position: relative;
+  margin-top: 28px;
+}
+
+.gauge__average {
+  color: #3956F7;
+}
+
+.gauge__cirlce {
+  stroke-linecap: round;
+}
+
+.gauge__cirlce-base {
+  stroke: #E9EBFC;
+  stroke-width: 3;
+}
+
+.gauge__cirlce-arc {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 7;
+  transition: stroke-dasharray 0.5s;
+}
+
+.gauge__percent {
+  font-style: "Roboto";
+  color: #000000;
+  font-size: 24px;
+  align-items: center;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}

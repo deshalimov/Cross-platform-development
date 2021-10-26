@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="styles/fonts.css">    
+	<link rel="stylesheet" type="text/css" href="styles/gauge.css">    
+	<link rel="stylesheet" type="text/css" href="styles/index.css">    
+</head>
+<body>
+  <div class="todo">
+        <h1 class="NameToday">Today</h1>
+        <!--Блок скролла-->
+        <div class="container">
+          <!-- Круг с процентами-->
+          <div class="gauge">
+              <div class="gauge__average">
+                <svg viewBox="0 0 120 120" class="gauge__cirlce" fill="none" stroke-width="2">
+                  <circle class="gauge__cirlce-base" r="53" cx="60" cy="60"></circle>
+                  <circle
+                    class="gauge__cirlce-arc" 
+                    r="53" cx="60" cy="60"
+                    transform="rotate(-90 60 60)"
+                    stroke-dashoffset="0"
+                    stroke-dasharray="1 329"></circle>
+                </svg>
+                <div class="gauge__percent"></div>                
+              </div>
+          </div>
+          <!--Круг с процентами-->
+        <h2 class="tasksToDo"></h2> <!--Сколько дел осталось-->
+        <!--Картинка выполнения заданий-->
+        <div class = "picture">
+          <object type="image/svg+xml" height="280px"></object>
+          <h2 class = "text1InPicture"></h2>
+          <h3 class = "text2InPicture"></h3>
+        </div>
+        <!--Картинка выполнения заданий-->
+        <!--Контейнер элементов дел-->
+        <div class="containerElementsCheckBox">
+          <!-- What's next-->
+          <div class="blockWhatsNext">
+            <input class="textWhatsNext" type="text" placeholder="What's next?">
+            <svg class="svgWhatsNext" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-arule="evenodd" d="M8 0C8.55229 0 9 0.447715 9 1V7H15C15.5523 7 16 7.44772 16 8C16 8.55229 15.5523 9 15 9H9V15C9 15.5523 8.55229 16 8 16C7.44772 16 7 15.5523 7 15V9H1C0.447715 9 0 8.55229 0 8C0 7.44772 0.447715 7 1 7H7V1C7 0.447715 7.44772 0 8 0Z" fill="#A5A5A5"/>
+            </svg>
+          </div>
+          <!--What's next-->
+        </div>
+        <!--Контейнер элементов дел-->
+      </div>
+      <!--Блок скролла-->
+    </div>
+    <!--Кнопка нового дня-->
+    <div class="buttonNewDay">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M13 0C14.6569 0 16 1.34315 16 3V13C16 14.6569 14.6569 16 13 16H3C1.34315 16 0 14.6569 0 13V3C0 1.34315 1.34315 0 3 0H13ZM2 13C2 13.5523 2.44772 14 3 14H13C13.5523 14 14 13.5523 14 13V9H11.874C11.4464 10.6613 9.97831 11.905 8.20583 11.9948L8 12C6.20519 12 4.68648 10.8179 4.17993 9.1898L4.12602 9H2V13ZM13 2H3C2.44772 2 2 2.44772 2 3V7H5C5.51284 7 5.93551 7.38604 5.99327 7.88338L6 8C6 9.10457 6.89543 10 8 10C9.05436 10 9.91817 9.18412 9.99451 8.14926L10.0067 7.88338C10.0601 7.4243 10.4243 7.06005 10.8834 7.00673L11 7H14V3C14 2.44772 13.5523 2 13 2Z" fill="#252526"/>
+      </svg>        
+      <div class="newDay">New Day</div>
+    </div>
+  <script type="text/javascript" src="scripts/helpers.js"></script>
+  <script type="text/javascript" src="scripts/index.js"></script>
+</body>
+</html>

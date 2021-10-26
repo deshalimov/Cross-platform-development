@@ -1,0 +1,12 @@
+{
+ 	"manifest_version": 2,
+ 	"name": "Today todo-app new tab extension",
+ 	"version": "1.0",
+	"description": "Awesome lightweight todo app that lives right in a new tab.",
+	"icons": {
+		"16": "images/today-logo.png"
+	},
+	"chrome_url_overrides" : {
+		"newtab": "index.html"
+	}
+}
